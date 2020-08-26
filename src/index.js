@@ -8,7 +8,7 @@ $(document).ready(function () {
     audioSrc.connect(analyser);
     audioSrc.connect(audioCtx.destination);
  
-    var frequencyData = new Uint8Array(100);
+    var frequencyData = new Uint8Array(200);
  
     var svgHeight = '300';
     var svgWidth = '1200';
@@ -45,6 +45,9 @@ $(document).ready(function () {
           .attr('y', function(d) {
              return svgHeight - d;
           })
+          .attr('x', function(d) {
+             return svgHeight - d;
+          })
           .attr('height', function(d) {
              return d;
           })
@@ -52,7 +55,7 @@ $(document).ready(function () {
              return 'rgb(0, 0, ' + d + ')';
           });
     }
- 
+
     renderChart();
    
  });
