@@ -11,10 +11,10 @@
 
     <audio id="audioElement" crossorigin="anonymous" src="./audio/Field of Hopes and Dreams.mp3"></audio>
     <div>
-      <button onclick="document.getElementById('audioElement').play()">Play Audio</button>
-      <button onclick="document.getElementById('audioElement').pause()">Pause</button>
-      <button onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
-      <button onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
+      <button class="control" onclick="document.getElementById('audioElement').play()">Play Audio</button>
+      <button class="control" onclick="document.getElementById('audioElement').pause()">Pause</button>
+      <button class="control" onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
+      <button class="control" onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
     </div>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>

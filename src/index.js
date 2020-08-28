@@ -33,12 +33,13 @@ $(document).ready(function () {
        .attr('x', function (i) {
           return i * (svgWidth / frequencyData.length);
        })
-       .attr('width', svgWidth / frequencyData.length - barPadding);
+       .attr('width', svgWidth / frequencyData.length * 2.5 - barPadding);
  
     function renderChart() {
        requestAnimationFrame(renderChart);
  
        analyser.getByteFrequencyData(frequencyData);
+      //  analyser.getByteTimeDomainData(frequencyData);
  
        svg.selectAll('rect')
           .data(frequencyData)
@@ -56,6 +57,7 @@ $(document).ready(function () {
           });
     }
 
+    console.log(frequencyData)
     renderChart();
    
  });
