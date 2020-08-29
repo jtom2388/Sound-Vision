@@ -1,9 +1,17 @@
 .control {
     color: white;
     background: rgb(79, 126, 226);
+    padding: 0.6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 5px;
 }
 
 .control:hover {
     font-weight: bold;
     background: darkblue;
+}
+
+body {
+    background: black;
 }
