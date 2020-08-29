@@ -1,0 +1,9 @@
+.control {
+    color: white;
+    background: rgb(79, 126, 226);
+}
+
+.control:hover {
+    font-weight: bold;
+    background: darkblue;
+}
