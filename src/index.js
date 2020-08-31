@@ -47,7 +47,10 @@ $(document).ready(function () {
              return svgHeight - d;
           })
           .attr('x', function(d) {
-             return svgHeight - d;
+             return (svgWidth - d) * Math.random();
+          })
+          .attr('width', function(d) {
+             return svgWidth - d;
           })
           .attr('height', function(d) {
              return d;
