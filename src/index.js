@@ -33,7 +33,7 @@ $(document).ready(function () {
        .attr('x', function (i) {
           return i * (svgWidth / frequencyData.length);
        })
-       .attr('width', svgWidth / frequencyData.length * 2.5 - barPadding);
+       .attr('width', svgWidth / frequencyData.length - barPadding);
  
     function renderChart() {
        requestAnimationFrame(renderChart);
@@ -50,13 +50,14 @@ $(document).ready(function () {
              return (svgWidth - d) * Math.random();
           })
           .attr('width', function(d) {
-             return svgWidth - d;
+             return (svgWidth - d) / frequencyData.length;
           })
           .attr('height', function(d) {
              return d;
           })
           .attr('fill', function(d) {
-             return 'rgb(0, 0, ' + d + ')';
+            //  return 'rgb(0, 0, ' + d + ')';
+            return "rgb(" + d + "," + 0 + "," + (570 - d) + ")";
           });
     }
 
