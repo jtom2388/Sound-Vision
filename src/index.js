@@ -8,10 +8,12 @@ $(document).ready(function () {
     audioSrc.connect(analyser);
     audioSrc.connect(audioCtx.destination);
  
-    var frequencyData = new Uint8Array(200);
+    var frequencyData = new Uint8Array(300);
  
-    var svgHeight = '300';
-    var svgWidth = '1200';
+   //  var svgHeight = '300';
+   //  var svgWidth = '1200';
+    var svgHeight = window.innerHeight * 0.88;
+    var svgWidth = window.innerWidth;
     var barPadding = '1';
  
     document.querySelector('button').addEventListener('click', function() {
@@ -53,7 +55,7 @@ $(document).ready(function () {
              return (svgWidth - d) / frequencyData.length;
           })
           .attr('height', function(d) {
-             return d;
+             return svgHeight - d;
           })
           .attr('fill', function(d) {
             //  return 'rgb(0, 0, ' + d + ')';
