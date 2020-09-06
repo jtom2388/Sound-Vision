@@ -8,7 +8,7 @@ $(document).ready(function () {
     audioSrc.connect(analyser);
     audioSrc.connect(audioCtx.destination);
  
-    var frequencyData = new Uint8Array(300);
+    var frequencyData = new Uint8Array(400);
  
    //  var svgHeight = '300';
    //  var svgWidth = '1200';
