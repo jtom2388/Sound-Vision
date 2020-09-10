@@ -1,6 +1,6 @@
 .control {
     color: white;
-    background: rgb(79, 126, 226);
+    background: rgb(120, 56, 204);
     padding: 0.6rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -9,7 +9,7 @@
 
 .control:hover {
     font-weight: bold;
-    background: darkblue;
+    background: rgb(87, 46, 87);
 }
 
 body {
