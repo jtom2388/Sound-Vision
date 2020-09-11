@@ -58,7 +58,6 @@ $(document).ready(function () {
              return svgHeight - d;
           })
           .attr('fill', function(d) {
-            //  return 'rgb(0, 0, ' + d + ')';
             return "rgb(" + d + "," + 0 + "," + (570 - d) + ")";
           });
     }
