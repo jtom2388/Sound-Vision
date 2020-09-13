@@ -1,3 +1,9 @@
+.title {
+    color: rebeccapurple;
+    font-size: 30px;
+    font-style: oblique;
+}
+
 .control {
     color: white;
     background: rgb(120, 56, 204);
@@ -14,4 +20,23 @@
 
 body {
     background: black;
+}
+
+.header {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    transition: 4s;
+    width: 100%;
+}
+
+.personal-links-container {
+    display: flex;
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+.title {
+    padding-left: 2rem;
 }
