@@ -12,8 +12,10 @@ $(document).ready(function () {
  
    //  var svgHeight = '300';
    //  var svgWidth = '1200';
-    var svgHeight = window.innerHeight * 0.88;
-    var svgWidth = window.innerWidth;
+   //  var svgHeight = window.innerHeight * 0.88;
+    var svgHeight = '800';
+   //  var svgWidth = window.innerWidth;
+    var svgWidth = '1800';
     var barPadding = '1';
  
     document.querySelector('button').addEventListener('click', function() {
