@@ -51,12 +51,10 @@ $(document).ready(function () {
              return svgHeight - d;
           })
           .attr('x', function(d) {
-            //  return (svgWidth) * Math.random();
              return (svgWidth - d) * Math.random();
           })
           .attr('width', function(d) {
              return (svgWidth - d) / frequencyData.length;
-            //  return (svgWidth) / frequencyData.length;
           })
           .attr('height', function(d) {
              return svgHeight - d;
